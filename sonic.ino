@@ -1,5 +1,5 @@
 const int pingPin = 14;
-const int led[4] = {6, 8, 9, 10};
+const int led[4] = { 6, 8, 9, 10};
 const int button = 5;
 int cmax;
 
@@ -72,6 +72,5 @@ void loop() {
   }
   if(valor < cmax - 1) {
     Keyboard.write(map(valor, 1, cmax - 1, 65, 90));
-    digitalWrite(6, LOW);
   }
 }
